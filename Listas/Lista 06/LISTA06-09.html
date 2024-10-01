@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercicio 08</title>
+</head>
+<body>
+   <hr>
+   <div>
+      <header>
+      <h4>Não é associado?Faça seu cadastro</h4>
+      </header>
+      <main>
+      <form method="post" action="#">
+         <br>
+         <legend><strong>Dados Pessoais</strong></legend>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" required />  
+            <br><br>
+            <label for="nomeCompleto">Nome Completo</label>
+            <input type="text" name="nomeCompleto" required />
+            <br><br>
+            <label for="CPF">CPF:</label>
+            <input type="number" name="CPF" required/>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email"  required/>
+            <br><br>
+            <label for="website">Website</label>
+            <input type="text" name="website"  required/>
+            <br><br>
+            <label for="endereço">Endereço</label>
+            <input type="text" name="endereço"  required/>
+            <br><br>
+            <label>Bairro</label> 
+            <input type="text" name="bairro">
+            <br><br>
+            <label>Cidade</label> 
+            <input type="text"name="cidade">
+            <br><br>
+            <label>CEP</label> 
+            <input type="text" name="cep">
+            <br><br>
+            <label>UF</label>
+            <select>
+            <option value="bahia">BA</option>
+            <option value="sao_paulo">SP</option>
+            <option value="rio_de_janeiro">RJ</option>
+
+        </select><BR><BR>
+        <label>Telefone</label> <input type="tel" name="telefone"> <label>Fax</label><input type="text"
+            name="fax"><br><br>
+        <label>Data de nascimento</label> <input type="date" name="d_nasc"> <label>Sexo</label>
+        <input type="radio" name="sexo" id="sexo" value="feminino" />
+        <label for="feminino">F</label>
+        <input type="radio" name="sexo" id="sexo" value="masculino" />
+        <label for="masculino">M</label><br><br>
+        <label>Celular</label> <input type="tel" name="celular"> <label>Est. Civil</label> <select>
+            <option value="solteiro">Solteiro</option>
+            <option value="casado">Casado</option>
+            <option value="viuvo">Viúvo</option>
+        </select>
+        <label>Login</label> <input type="text" name="login"> <label>Senha</label> <input type="password"
+            name="senha"><br><br>
+
+        <label>Deseja receber informações sobre os seguintes assuntos abaixo?:</label><br><br>
+        <input type="checkbox" id="checkbox-tecnologia" name="tecnologia[]" value="tecnologia" />
+        <label for="checkbox-tecnologia">Tecnologia</label>
+        <input type="checkbox" id="checkbox-automoveis" name="automoveis[]" value="automoveis" />
+        <label for="checkbox-automoveis">Automoveis</label>
+        <input type="checkbox" id="checkbox-culinaria" name="culinaria[]" value="culinaria" />
+        <label for="checkbox-culinaria">Culinaria</label>
+        <input type="checkbox" id="checkbox-politica" name="Politica[]" value="Politica" />
+        <label for="checkbox-politica">Politica</label>
+        <input type="checkbox" id="checkbox-policial" name="policial[]" value="policial" />
+                <label for="checkbox-policial">Policial</label>
+                <input type="checkbox" id="checkbox-tempo" name="tempo[]" value="tempo" />
+                <label for="checkbox-tempo">Tempo</label>
+                <input type="checkbox" id="checkbox-cultura" name="Cultura[]" value="cultura" />
+                <label for="checkbox-cultura">Cultura</label>
+                <input type="checkbox" id="checkbox-Economia" name="economia[]" value="economia" />
+                <label for="checkbox-Economia">Economia</label>
+                <input type="checkbox" id="checkbox-Jogos" name="jogos[]" value="jogos" />
+                <label for="checkbox-Jogos">Jogos</label>
+                <input type="checkbox" id="checkbox-educacao" name="educacao[]" value="educacao" />
+                <label for="checkbox-educacao">Educação</label>
+                <input type="checkbox" id="checkbox-viagem" name="viagem[]" value="viagem" />
+                <label for="checkbox-viajem">Viagem</label>
+                <input type="checkbox" id="checkbox-empregos" name="Empregos[]" value="empregos" />
+                <label for="checkbox-empregos">Empregos</label>
+                <input type="checkbox" id="checkbox-modaeestilo" name="modaeeestilo[]" value="modaeeestilo" />
+                <label for="checkbox-modaeestilo">Moda e Estilo</label><br><br>
+
+                <input type="checkbox" id="checkbox-concordo" name="concordo[]" value="condordo" />
+                <label for="checkbox-concordo">Li as regras de cadastro e autorizo a criação do usuario</label><br><br>
+
+                <button type="submit">Enviar</buttontype>
+                    <button type="reset">Limpar</buttontype>
+
+      </form>   
+</body>
+</html>

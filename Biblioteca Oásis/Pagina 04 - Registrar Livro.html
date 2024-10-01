@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Oásis - Cadastro de Livro</title>
+    <link rel="icon" href="livros - icon.png">
+</head>
+<body>
+    <center>
+    <h1>Registro de Livro</h1>
+    </center>
+    <center>
+    <hr>
+    <form action="/cadastrar_livro" method="POST">
+        <label for="titulo">Título do Livro:</label><br>
+        <input type="text" id="titulo" name="titulo" required><br><br>
+
+
+        <label for="autor">Autor do Livro:</label><br>
+        <input type="text" id="autor" name="autor" required><br><br>
+
+
+        <label for="isbn">ISBN:</label><br>
+        <input type="text" id="isbn" name="isbn" required maxlength="13" placeholder="Somente números"><br><br>
+
+
+        <label for="editora">Editora:</label><br>
+        <input type="text" id="editora" name="editora" required><br><br>
+
+
+        <label for="ano">Ano de Publicação:</label><br>
+        <input type="number" id="ano" name="ano" required><br><br>
+
+
+        <label for="categoria">Categoria:</label><br>
+        <input type="text" id="categoria" name="categoria"><br><br>
+        <hr>
+        <input type="submit" value="Cadastrar">
+    </form>
+    </center>
+</body>
+</html>

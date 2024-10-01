@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Oásis - Empréstimo</title>
+    <link rel="icon" href="livros - icon.png">
+</head>
+<body>
+    <center>
+    <h1>Cadastro de Empréstimo de Livro</h1>
+    </center>
+    <center>
+    <hr>
+    <form action="/cadastrar_emprestimo" method="POST">
+        <label for="emprestimo">ID do Empréstimo:</label><br>
+        <input type="number" id="emprestimo" name="emprestimo" required><br><br>
+
+
+        <label for="cliente">ID do Cliente:</label><br>
+        <input type="number" id="cliente" name="cliente" required><br><br>
+
+
+        <label for="isbn">ISBN do Livro:</label><br>
+        <input type="text" id="isbn" name="isbn" required maxlength="13" placeholder="Somente números"><br><br>
+
+
+        <label for="data_emprestimo">Data do Empréstimo:</label><br>
+        <input type="date" id="data_emprestimo" name="data_emprestimo" required><br><br>
+
+
+        <label for="data_devolucao_prevista">Data da Devolução Prevista:</label><br>
+        <input type="date" id="data_devolucao_prevista" name="data_devolucao_prevista" required><br><br>
+
+
+        <label for="data_devolucao_real">Data da Devolução Real:</label><br>
+        <input type="date" id="data_devolucao_real" name="data_devolucao_real"><br><br>
+
+
+        <label for="status">Status do Empréstimo:</label><br>
+        <select id="status" name="status" required>
+            <option value="" disabled selected>Selecione o status</option>
+            <option value="ativo">Ativo</option>
+            <option value="concluido">Concluído</option>
+            <option value="atrasado">Atrasado</option>
+        </select><br><br>
+        <hr>
+        <input type="submit" value="Cadastrar">
+    </center>
+    </form>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+</body>
+</html>

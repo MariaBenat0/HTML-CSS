@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercicio 06</title>
+</head>
+<body>
+   <header>
+      <h2>Pesquisa <u>IBGE</u></h2>
+      </header>
+      <br>
+      <main>
+         <label for="nome">Nome Compelto:</label>
+         <br><br>
+         <input type="text" name="nome" placeholder="Digite seu nome aqui" required /> 
+         <br><br><br>
+
+         <label>Qual meio de transporte voce utiliza?(múltipla escolha)</label>
+         <br><br>
+
+         <input type="checkbox" id="checkbox-bicicleta" name="transporte[]" value="Bicicleta"/>
+         <label for="checkbox-bicicleta">Bicicleta</label>
+         <br>
+         <input type="checkbox" id="checkbox-carro" name="transporte[]" value="carro/>
+         <label for="checkbox-carro">Carro</label>
+         <br>
+         <input type="checkbox" id="checkbox-onibus" name="transporte[]" value="onibus"/>
+         <label for="checkbox-onibus">Ônibus</label>
+         <br>
+         <input type="checkbox" id="checkbox-Ape" name="transporte[]" value="Ape"/>
+         <label for="checkbox-Ape">A Pé</label>
+         <br>
+         <input type="checkbox" id="checkbox-aviao" name="transporte[]" value="avia"/>
+         <label for="checkbox-aviao">Avião</label>
+         <br><br>
+         <button type="submit">Enviar</button>
+         <button type="reset">Limpar</button>
+      </main>   
+</body>
+</html>

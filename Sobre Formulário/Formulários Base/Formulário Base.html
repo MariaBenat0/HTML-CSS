@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>FORMULÁRIO</title>
+</head>
+<body>
+   <div>
+      <header>
+      <h2>CyberExpress</h2>
+      </header>
+      <main>
+      <h1>Caixa de Sugestões</h1>
+      <p>Escreva na caixa de texto abaixo o que podemos fazer para melhorar
+      o espaço do CyberExpress. Deixe seu elogio, crítica ou sugestão abaixo e
+      envie pra gente!</p>
+      <textarea name="sugestao" style="resize: none" required="yes" rows="7" cols="50"></textarea>
+      <form method="post" action="#">
+         <br>
+         <br>
+         <label for="nome">Nome:</label>
+         <input type="text" name="nome" placeholder="Escreva seu Nome" required />
+         <br>
+         <br>
+         <label for="senha">Senha:</label>
+         <input type="passoword" name="senha" placeholder="Digite sua Senha" required/> 
+         <br>
+         <br>
+         <label for="date">Data:</label>
+         <input type="date" name="dt_nasc"required/>
+         <br>
+         <br>
+         <label for="codigo">Código:</label>
+         <input type="number" name="codigo" placeholder="Digite o Código" required/>
+         <br>
+         <br>
+         <label for="email">Email:</label>
+         <input type="email" name="email" placeholder="Digite seu Email" required/>
+         <br>
+         <br>
+         <label for="telefone">Telefone:</label>
+         <input type="tel" name="telefone" placeholder="Digite seu Telefone" required/>  
+         <br> 
+         <br>
+         <!--Checkbox-->
+         <br>
+         <input type="checkbox" id="checkbox-futebol" name="esportes[]" value="futebol"/>
+         <label for="checkbox-futebol">Futebol</label>
+         <input type="checkbox" id="checkbox-volei" name="esportes[]" value=“volei"/>
+         <label for="checkbox-volei">Volei</label>
+         <br>
+         <!---radio--->
+         <br>
+         <input type="radio" name="resposta" id="animal-sim" value="sim" checked required/>
+         <label for="animal-sim">Sim</label>
+
+         <input type="radio" name="resposta" id="animal-nao" value="nao"/>
+         <label for="animal-nao">Não</label>
+         <br>
+         <!--Select-->
+         <br>
+         <select name="cores">
+            <option value="blue">Azul</option>
+            <option value="red">Vermelho</option>
+            <option value="yellow">Amarelo</option>
+            <option value="pink">Rosa</option> 
+         </select>
+         <br>
+         <!--Select cm classificação-->
+         <br>
+         <select name=“Estado">
+            <optgroup label="Sudeste">
+                     <option value="saopaulo">São Paulo</option>
+                     <option value="riodejaneiro">Rio de Janeiro</option>
+                     <option value="minasgerais">Minas Gerais</option>
+                     <option value="espiritosanto">Espirito Santo</option>
+            </optgroup>
+            <optgroup label="Sul">
+                     <option value="parana">Paraná</option>
+                     <option value="santacatarina">Santa Catarina</option>
+                     <option value="riogsul">Rio Grande do Sul</option>
+            </optgroup>
+         </select>
+         <br> <br>
+         <!--Forma uma caixa em volta da Checkbox-->
+         <fieldset>
+            <legend><strong>Quais seus esportes favoritos?</strong></legend>
+            <form action="#">
+              <input type="checkbox" id="checkbox-futebol" name="esportes[]" value="futebol"/>
+              <label for="checkbox-futebol">Futebol</label>
+              <input type="checkbox" id="checkbox-volei" name="esportes[]" value=“volei"/>
+              <label for="checkbox-volei">Volei</label>
+              <button type="submit">Enviar formulário</button>
+            </form>
+            </fieldset>            
+         <br>
+
+         <!--Botão de sugestão-->
+        <br>
+         <button type="submit">Enviar sugestão</button>
+         <br> 
+      </form>
+      </main>
+      <br>
+      <footer>
+         Copyright 2023 - CyberExpres
+      </footer>
+      </div>
+      <br>
+</body>
+</html>

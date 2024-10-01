@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Formulario escola</title>
+</head>
+<body>
+   <h1>Formulário para evento de ciências</h1>
+   <form method="post" action="#">
+      <br>
+      <br>
+      <label for="nome">Nome Completo:</label>
+      <input type="text" name="nome" placeholder="Insira seu Nome" required />
+      <br>
+      <br>
+      <label for="idade">Idade</label>
+      <input type="number" name="idade" placeholder="Insira sua Idade" required />
+      <br>
+
+      <p>Selecione sua série:</p>
+
+      <select name="Série">
+         <option value="sexta">6°</option>
+         <option value="setima">7°</option>
+         <option value="oitava">8°</option>
+         <option value="nona">9°</option>
+      </select>
+
+      <p>Participação na Equipe:</p>
+
+      <input type="radio" name="resposta" id="vai-sim" value="sim" checked required />
+      <label for="vai-sim">Sim</label>
+
+      <input type="radio" name="resposta" id="vai-nao" value="nao" />
+      <label for="vai-nao">Não</label>
+      <br>
+
+      <br>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" placeholder="Insira seu Email" required />
+      <br>
+      <br>
+
+      <legend><strong>Termos de participação</strong></legend>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, urna in aliquet faucibus, erat magna venenatis magna, a bibendum lacus sapien a purus. Integer auctor tortor sed est consectetur, ac laoreet ligula tincidunt. Vivamus vel ligula sit amet sapien tincidunt vulputate. Morbi scelerisque arcu nec nunc bibendum dictum. Cras vel nunc eget erat euismod hendrerit</p>
+
+            <input type="checkbox" id="checkbox-TermoDeContato" name="Aceitar Termos de Participação []" value="AceitoTermos"/>
+            <label for="checkbox-TermosDeContato">Reponsável aceita os termos.</label>
+
+      <br><br>
+      <button type="submit">Enviar formulário</button>
+
+   </form>
+</body>
+
+</html>

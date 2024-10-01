@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sócio Cabra da Peste</title>
+   <link rel="icon" href="cabra.png"> 
+</head>
+<body>
+   <hr>
+   <div>
+      <header>
+      <h2>Formulário de Incrição</h2>
+      </header>
+      <main>
+      <form method="post" action="#">
+         <br>
+
+         <!--Dados Pessoais-->
+
+         <fieldset>
+            <legend><strong>Dados Pessoais</strong></legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu Nome" required />  
+
+            <label for="date">Data de Nascimento:</label>
+            <input type="date" name="dt_nasc"required/>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" placeholder="(XX)XXXXX-XXXX" required/>
+
+            <label for="CPF">CPF:</label>
+            <input type="number" name="CPF" placeholder="XXX.XXX.XXX-XX" required/>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="exemplo@gmail.com" required/>
+         </fieldset>      
+         
+         <!--Endereço-->
+
+         <fieldset>
+            <legend><strong>Endereço</strong></legend>
+            <label for="Endereço">Endereço:</label>
+            <input type="text" name="Endereço" placeholder="Digite seu endreço" required />  
+
+            <label for="Cidade">Cidade:</label>
+            <input type="text" name="Cidade" placeholder="Digite sua Cidade" required /> 
+
+
+            <label for="Endereço">Endereço:</label>
+            <select name=“Estado">
+               <optgroup label="Sudeste">
+                        <option value="saopaulo">São Paulo</option>
+                        <option value="riodejaneiro">Rio de Janeiro</option>
+                        <option value="minasgerais">Minas Gerais</option>
+                        <option value="espiritosanto">Espirito Santo</option>
+               </optgroup>
+               <optgroup label="Sul">
+                        <option value="parana">Paraná</option>
+                        <option value="santacatarina">Santa Catarina</option>
+                        <option value="riogsul">Rio Grande do Sul</option>
+               </optgroup>
+            </select>
+            </fieldset>
+
+         <!--Plano-->
+
+         <fieldset>
+            <legend><strong>Plano</strong></legend>
+            <input type="radio" id="Plano-Ovelha" name="Plano Ovelha[]" value="Ovelha" checked required />
+            <label for="Plano-Ovelha">Plano Ovelha</label>
+
+            <input type="radio" id="Plano-Cabrito" name="Plano Cabrito[]" value=“Cabrito" />
+            <label for="Plano-Cabrito">Plano Cabrito</label>   
+         
+            <input type="radio" id="Plano-Bode" name="Plano Bode[]" value="Bode" />
+            <label for="Plano-Bode">Plano Bode</label>
+
+            <input type="radio" id="Plano-CabraDaPeste" name="Plano Cabra da Peste[]" value=“CabraDaPeste"/>
+            <label for="Plano-CabraDaPeste">Plano Cabra da Peste</label>  
+         </fieldset>
+
+         <!--Espaço Paixão por Cabritus-->
+
+         <fieldset>
+            <legend><strong>Fale sobre sua PAIXÃO pelo CABRITUS</strong></legend>
+            <textarea name="sugestao" style="resize: none" required="yes" rows="7" cols="163"></textarea>
+         </fieldset>
+
+         <!--Termos de Contato-->
+
+         <fieldset>
+            <legend><strong>Termos de Contato</strong></legend>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, urna in aliquet faucibus, erat magna venenatis magna, a bibendum lacus sapien a purus. Integer auctor tortor sed est consectetur, ac laoreet ligula tincidunt. Vivamus vel ligula sit amet sapien tincidunt vulputate. Morbi scelerisque arcu nec nunc bibendum dictum. Cras vel nunc eget erat euismod hendrerit</p>
+
+            <input type="checkbox" id="checkbox-TermoDeContato" name="Aceitar Termos de Contato[]" value="AceitoTermos"/>
+            <label for="checkbox-TermosDeContato">Aceitar Termos de Contato</label>
+
+            <input type="checkbox" id="checkbox-ReceberNoticias" name="Aceito Receber Noticias[]" value=“AceitoNoticias"/>
+            <label for="checkbox-RecberNoticias"> Aceito Receber Noticias</label>
+         </fieldset>
+
+         <!--Botao de enviar dados-->
+
+         <br>
+         <button type="submit">Enviar Dados</button>
+         <br> <br>
+         <a href="@">Voltar</a>
+         <hr>
+          
+         <!--Copyright-->
+
+         <footer>
+            <center>Copyright 2023 © - Tec. Multimídia <br>
+            Santa Cruz do Rio Pardo - SP</center>
+         </footer>
+
+         </div>
+
+      </form>
+      </main>   
+   
+</body>
+</html>
